@@ -38,5 +38,5 @@ This is an online shopping application built to provide users with a seamless sh
 
 ### Version Control
 
-- GitHub (private repository)
+- GitHub
 
