@@ -1,0 +1,16 @@
+<h2>Login</h2>
+
+<form>
+  <input
+    type="text"
+    name="username"
+    [(ngModel)]="loginForm.username"
+    placeholder="Username"
+    required>
+  <input
+    type="password"
+    name="password"
+    [(ngModel)]="loginForm.password"
+    placeholder="Password">
+  <button (click)="onClick()">Login</button>
+</form>

@@ -1,0 +1,24 @@
+<h2>Register</h2>
+
+<form>
+  <input
+    type="text"
+    name="username"
+    [(ngModel)]="registerForm.username"
+    placeholder="Username"
+    required>
+  <input
+    type="text"
+    name="email"
+    [(ngModel)]="registerForm.email"
+    placeholder="Email"
+    required>
+  <input
+    type="password"
+    name="password"
+    [(ngModel)]="registerForm.password"
+    placeholder="Password"
+    required>
+  <button (click)="onClick()">Register</button>
+</form>
+

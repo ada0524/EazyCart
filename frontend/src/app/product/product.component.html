@@ -1,0 +1,93 @@
+<table mat-table [dataSource]="products">
+    <ng-container matColumnDef="productId">
+      <th mat-header-cell *matHeaderCellDef> Product ID </th>
+      <td mat-cell *matCellDef="let product"> {{ product.productId }} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="productName">
+      <th mat-header-cell *matHeaderCellDef> Product Name </th>
+      <td mat-cell *matCellDef="let product"> {{ product.name }} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="actions">
+      <th mat-header-cell *matHeaderCellDef> Actions </th>
+      <td mat-cell *matCellDef="let product">
+        <button mat-button (click)="getProductDetails(product.productId)">View</button>
+        <button mat-button (click)="addToWatchlist(product.productId)">Add to watchlist</button>
+      </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    
+</table>
+
+<div *ngIf="productDetails">
+    <h2>Product Details</h2>
+    <p>Product ID: {{ productDetails.productId }}</p>
+    <p>Name: {{ productDetails.name }}</p>
+    <p>Price: {{ productDetails.retailPrice }}</p>
+    <p>Description: {{ productDetails.description }}</p>
+
+    <ng-container *ngIf="!isUser">
+      <p>Quantity: {{ productDetails.quantity }}</p>
+      <p>Wholesale Price: {{ productDetails.wholesalePrice }}</p>
+    </ng-container>
+</div>
+
+<!-- New Product Form -->
+<div *ngIf="!isUser">
+  <h3>Add New Product</h3>
+  <form #newProductForm="ngForm" (ngSubmit)="addProduct(newProductForm)">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" ngModel required>
+
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" ngModel></textarea>
+
+    <label for="wholesalePrice">Wholesale Price:</label>
+    <input type="number" id="wholesalePrice" name="wholesalePrice" ngModel required>
+
+    <label for="retailPrice">Retail Price:</label>
+    <input type="number" id="retailPrice" name="retailPrice" ngModel required>
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" ngModel required>
+
+    <button type="submit">Add Product</button>
+  </form>
+</div>
+
+<div *ngIf="isUser">
+  <h2>Top 3 Frequently Products</h2>
+  <div *ngFor="let frequentlyProduct of mostFrequentlyProducts">
+    <p>ID: {{ frequentlyProduct[0] }}</p>
+    <p>Name: {{ frequentlyProduct[1] }}</p>
+    <p>Frequecy: {{ frequentlyProduct[2] }}</p>
+  </div>
+
+  <h2>Top 3 Recently Products</h2>
+  <div *ngFor="let recentlyProduct of mostRecentlyProducts">
+    <p>ID: {{ recentlyProduct[0] }}</p>
+    <p>Name: {{ recentlyProduct[1] }}</p>
+    <p>Recently: {{ recentlyProduct[2] }}</p>
+  </div>
+</div>
+
+<div *ngIf="!isUser">
+  <h2>Top 3 Profitable Products</h2>
+  <div *ngFor="let profitableProduct of topProfitableProducts">
+    <p>ID: {{ profitableProduct[0] }}</p>
+    <p>Name: {{ profitableProduct[1] }}</p>
+    <p>Profit: {{ profitableProduct[2] }}</p>
+  </div>
+
+  <h2>Top 3 Popular Products</h2>
+  <div *ngFor="let popularProduct of topPopularProducts">
+    <p>ID: {{ popularProduct[0] }}</p>
+    <p>Name: {{ popularProduct[1] }}</p>
+    <p>Popularity/Sold: {{ popularProduct[2] }}</p>
+  </div>
+</div>
+
+  

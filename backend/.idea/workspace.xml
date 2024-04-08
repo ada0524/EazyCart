@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9df565d1-2567-4526-8b6d-a4ce34dd9ec9" name="Changes" comment="fix password encoder">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSecurityAuth/src/main/java/org/example/springsecurityauth/aop/LoggingAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSecurityAuth/src/main/java/org/example/springsecurityauth/aop/LoggingAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSecurityAuth/src/main/java/org/example/springsecurityauth/aop/MyExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSecurityAuth/src/main/java/org/example/springsecurityauth/aop/MyExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSecurityAuth/src/main/java/org/example/springsecurityauth/config/SecurityBeansConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSecurityAuth/src/main/java/org/example/springsecurityauth/config/SecurityBeansConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSecurityAuth/src/main/java/org/example/springsecurityauth/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSecurityAuth/src/main/java/org/example/springsecurityauth/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSecurityAuth/src/main/java/org/example/springsecurityauth/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSecurityAuth/src/main/java/org/example/springsecurityauth/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSecurityAuth/src/main/java/org/example/springsecurityauth/dao/AbstractHibernateDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSecurityAuth/src/main/java/org/example/springsecurityauth/dao/AbstractHibernateDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSecurityAuth/src/main/java/org/example/springsecurityauth/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSecurityAuth/src/main/java/org/example/springsecurityauth/service/UserService.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2ab89EWvavrnlJfsQ0kgHgx9Ig9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.OnlineShoppingContentApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SpringSecurityAuthApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/adelaideli/IdeaProjects/OnlineShopping/OnlineShoppingContent&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/OnlineShoppingContent" />
+      <recent name="$PROJECT_DIR$/OnlineShoppingContent/src/main" />
+      <recent name="$PROJECT_DIR$/OnlineShoppingContent/src/main/java/org/example/onlineshoppingcontent" />
+      <recent name="$PROJECT_DIR$/OnlineShoppingContent/src/main/java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.onlineshoppingcontent.aop" />
+      <recent name="org.example.springsecurityauth.dao" />
+      <recent name="org.example.springsecurityauth.entity" />
+      <recent name="org.example.springsecurityauth.config" />
+      <recent name="org.example.onlineshoppingcontent.config" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpringSecurityAuthApplication (1)">
+    <configuration name="OnlineShoppingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="OnlineShoppingContent" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.onlineshoppingcontent.OnlineShoppingApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OnlineShoppingContentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="OnlineShoppingContent" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.onlineshoppingcontent.OnlineShoppingContentApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringSecurityAuthApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="SpringSecurityAuth" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.springsecurityauth.SpringSecurityAuthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringSecurityAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="SpringSecurityAuth" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.beaconfire.springsecurityauth.SpringSecurityAuthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-20.0.2-corretto-20.0.2.1-f644763e9732-447c96ba" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9df565d1-2567-4526-8b6d-a4ce34dd9ec9" name="Changes" comment="" />
+      <created>1704575764814</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704575764814</updated>
+      <workItem from="1704575766894" duration="25560000" />
+      <workItem from="1704648240789" duration="33845000" />
+      <workItem from="1704731188005" duration="1904000" />
+      <workItem from="1704734709285" duration="921000" />
+      <workItem from="1704741052896" duration="8485000" />
+      <workItem from="1704773885062" duration="406000" />
+      <workItem from="1704774357264" duration="3368000" />
+      <workItem from="1704820931743" duration="24198000" />
+      <workItem from="1704994472643" duration="1621000" />
+      <workItem from="1705007087825" duration="26440000" />
+      <workItem from="1705167397623" duration="44541000" />
+      <workItem from="1705253109584" duration="10679000" />
+      <workItem from="1705271761667" duration="9278000" />
+      <workItem from="1705282460762" duration="33000" />
+      <workItem from="1705296686868" duration="4336000" />
+    </task>
+    <task id="LOCAL-00001" summary="Update module structure">
+      <option name="closed" value="true" />
+      <created>1704575927241</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704575927241</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update module structure">
+      <option name="closed" value="true" />
+      <created>1704575984880</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1704575984880</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add login start code">
+      <option name="closed" value="true" />
+      <created>1704608376435</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704608376435</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add login start code">
+      <option name="closed" value="true" />
+      <created>1704608431248</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704608431248</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add login &amp; signup function">
+      <option name="closed" value="true" />
+      <created>1704610704488</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1704610704488</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add product and order part">
+      <option name="closed" value="true" />
+      <created>1704660057690</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1704660057690</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add user product and order">
+      <option name="closed" value="true" />
+      <created>1704683079381</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1704683079381</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add user product and order">
+      <option name="closed" value="true" />
+      <created>1704684536499</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1704684536499</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add user product and order">
+      <option name="closed" value="true" />
+      <created>1704697059162</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1704697059162</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Modify auth part">
+      <option name="closed" value="true" />
+      <created>1704820961561</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1704820961561</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add Permission">
+      <option name="closed" value="true" />
+      <created>1704827642976</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1704827642976</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add Permission">
+      <option name="closed" value="true" />
+      <created>1704828090496</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1704828090496</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Add User/Buyer part">
+      <option name="closed" value="true" />
+      <created>1704849274369</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1704849274369</updated>
+    </task>
+    <task id="LOCAL-00014" summary="First version">
+      <option name="closed" value="true" />
+      <created>1704852035912</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1704852035912</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Add AOP">
+      <option name="closed" value="true" />
+      <created>1705131478910</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1705131478910</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Add Exception on SpringSecurityAuth">
+      <option name="closed" value="true" />
+      <created>1705172313610</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1705172313610</updated>
+    </task>
+    <task id="LOCAL-00017" summary="modify product">
+      <option name="closed" value="true" />
+      <created>1705177361723</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1705177361723</updated>
+    </task>
+    <task id="LOCAL-00018" summary="finish product">
+      <option name="closed" value="true" />
+      <created>1705189080151</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1705189080152</updated>
+    </task>
+    <task id="LOCAL-00019" summary="modify order">
+      <option name="closed" value="true" />
+      <created>1705210094427</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1705210094427</updated>
+    </task>
+    <task id="LOCAL-00020" summary="modify watchlist">
+      <option name="closed" value="true" />
+      <created>1705219132992</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1705219132992</updated>
+    </task>
+    <task id="LOCAL-00021" summary="first version">
+      <option name="closed" value="true" />
+      <created>1705271785262</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1705271785262</updated>
+    </task>
+    <task id="LOCAL-00022" summary="fix password encoder">
+      <option name="closed" value="true" />
+      <created>1705282480623</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1705282480623</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update module structure" />
+    <MESSAGE value="Add login start code" />
+    <MESSAGE value="Add login &amp; signup function" />
+    <MESSAGE value="Add product and order part" />
+    <MESSAGE value="Add user product and order" />
+    <MESSAGE value="Modify auth part" />
+    <MESSAGE value="Add Permission" />
+    <MESSAGE value="Add User/Buyer part" />
+    <MESSAGE value="First version" />
+    <MESSAGE value="Add AOP" />
+    <MESSAGE value="Add Exception on SpringSecurityAuth" />
+    <MESSAGE value="modify product" />
+    <MESSAGE value="finish product" />
+    <MESSAGE value="modify order" />
+    <MESSAGE value="modify watchlist" />
+    <MESSAGE value="first version" />
+    <MESSAGE value="fix password encoder" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix password encoder" />
+  </component>
+</project>
